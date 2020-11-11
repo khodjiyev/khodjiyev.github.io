@@ -446,7 +446,6 @@
     /* section more-details end */
 }
 
-
 @media(max-width: 1480px) {
     .more-info__content {
         width: 560px;
@@ -1484,7 +1483,7 @@
     .sale-discount {
         padding-top: 90px;
         justify-content: space-between;
-        padding-right: 20px;
+        padding-right: 0px;
     }
 
     .sale-discount__items .discount span {
@@ -1538,9 +1537,10 @@
     }
 
     .sale-discount__items {
-        width: 310px;
+        width: 100%;
         height: 550px;
         padding-top: 80px;
+        margin: 0;
     }
 
     .sale-discount__items .discount {
