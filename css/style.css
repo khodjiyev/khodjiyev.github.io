@@ -94,7 +94,7 @@ header {
 }
 
 .navbar-own__logo img {
-    width: 100%;
+    width: auto;
     height: 100%;
     object-fit: contain;
     object-position: center;
@@ -423,7 +423,7 @@ header {
 }
 
 .more-info__content a.more-info__details:focus {
-    outline: 0;
+    outline: none;
 }
 
 .more-info__content a.more-info__details:before {
@@ -1282,7 +1282,7 @@ footer {
 }
 
 .footer-copyright .footer__logo img {
-    width: 100%;
+    width: auto;
     height: 100%;
     object-fit: contain;
     object-position: center;
