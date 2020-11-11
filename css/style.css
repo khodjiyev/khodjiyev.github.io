@@ -911,7 +911,6 @@ header {
 /* sale-discount */
 
 .sale-discount {
-    padding-right: 61px;
     padding-top: 145px;
 }
 .sale-discount .row{
@@ -928,6 +927,7 @@ header {
     align-items: center;
     padding-top: 150px;
     border-radius: 60px;
+    margin: 0 auto;
 
 }
 
