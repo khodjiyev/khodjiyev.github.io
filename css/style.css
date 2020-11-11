@@ -64,6 +64,11 @@ header {
     z-index: 10;
     border-bottom: 1px solid #ffffff;
 }
+.container{
+    max-width: 1545px;
+    padding-right: 35px;
+    padding-left: 35px;
+}
 
 
 /* header end */
@@ -299,7 +304,7 @@ header {
 .more {
     position: relative;
     width: 100%;
-    height: 1080px;
+    height: 1090px;
     background-color: #ffffff;
     display: flex;
     align-items: center;
@@ -308,7 +313,7 @@ header {
 .more:before {
     content: '';
     position: absolute;
-   width: 45.7%;
+    width: 44.3%;
     height: 1090px;
     background: url('../images/about-imgbox.png')no-repeat;
     background-size: contain;
@@ -321,7 +326,7 @@ header {
 .more::after {
     content: '';
     position: absolute;
-    width: 55.5%;
+    width: 55.7%;
     height: 690px;
     right: 0;
     bottom: calc(50% + 18px);
@@ -1310,7 +1315,6 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-left: 20px;
 }
 
 .more-details .more-details__context .more-details__title {
@@ -1333,7 +1337,7 @@ footer {
     content: '';
     position: absolute;
     bottom: 0;
-    width: 900px;
+    width: 80%;
     height: 6px;
     background: #0AD9D9;
     left: 0;
