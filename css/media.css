@@ -1699,7 +1699,8 @@
     }
 
     .navbar-own__right a span {
-        width: 120px;
+        width: 125px;
+        height: 35px;
         padding-left: 0px;
         margin-left: 0px;
     }
@@ -2129,7 +2130,9 @@
         height: 45px;
         width: 2.5px;
     }
-
+    .sale {
+        padding-bottom: 0px;
+    }
 
     .sale .sale-ability__icon li {
         width: 50%;
