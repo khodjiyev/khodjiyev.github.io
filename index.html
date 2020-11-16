@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=576, initial-scale=1"/> -->
-    <meta name="viewport" content="width=576, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STARINCHUK</title>
 
     <link rel="stylesheet" href="./libs/Bootstrap-grid/bootstrap-grid.min.css">
@@ -13,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./fonts/font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="./fonts/ico-svg/style.css">
 
     <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
@@ -38,8 +38,18 @@
 <!-- body font-family: Roboto and background  color is #00122C -->
 
 <body>
+
+    <menu>
+        <ul>
+            <li><a class="menu__cabinet" href=""><span>Личный кабинет</span></a></li>
+            <li><a class="menu__about" href="#more">О чем курс?</a></li>
+            <li><a class="menu__course" href=""><span>Курсы</span> </a></li>
+           
+    </ul>
+    </menu>
     <!-- wrap-->
     <div class="wrapper">
+       
         <!-- header -->
         <header>
             <div class="container">
@@ -54,8 +64,13 @@
                     <!-- right side navbar -->
                     <div class="navbar-own__right">
                         <a href="#more">о чем курс?</a>
+
                         <!-- there is a hover effect here! -->
                         <a class="navbar-button__effect" href=""><span>курсы</span> </a>
+                        <a class="navbar-button__cabinet" href=""><span>личный кабинет</span></a>
+                    </div>
+                    <div class="navbar-own__bars">
+                        <a id="menu-button" class="menu__button" href="#"><span></span></a>
                     </div>
                 </div>
             </div>
@@ -70,17 +85,8 @@
                         <div class="banner-home__title">
                             <h1>Обучающий курс по нетворкингу,</h1>
                             <p> построению и управлению агентскими семьями</p>
-
-
                             <!-- there is a hover effect here and scrolling to id:#sale_discount__items -->
-
-
-
                             <a class="sale-button__effect" href="#sale-discount__items"><span>Купить курс</span> </a>
-
-
-
-
                         </div>
                     </div>
                 </div>
@@ -89,34 +95,40 @@
         <!-- section more in this class have a background -->
         <section class="more" id="more">
             <div class="container">
-                <div class="more-info">
-                    <div class="more-info__content">
-                        <div class="more-info__title">
-                            <h2>Кто я?</h2>
+                <div class="row">
+                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7"></div>
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5">
+                        <div class="more-info">
+                            <div class="more-info__content">
+                                <div class="more-info__title">
+                                    <h2>Кто я?</h2>
+                                </div>
+                                <p> Я - Сергей Старинчук. 9 лет я строил агентские сети в Украине, и вот уже 4 года
+                                    успешно
+                                    делаю то
+                                    же самое в Объединенных Арабских Эмиратах. Уже 13 лет главным моим инструментом,
+                                    позволяющим
+                                    быть успешным в продажах, является нетворкинг.
+                                </p>
+                                <p>
+                                    Я нарабатывал свой опыт долгое время путем проб и ошибок, а ты можешь всего этого
+                                    избежать
+                                    благодаря этому курсу!
+                                </p>
+                                <a class="more-info__details" href="./more-details.html"><span>Подробнее</span></a>
+                            </div>
                         </div>
-                        <p> Я - Сергей Старинчук. 9 лет я строил агентские сети в Украине, и вот уже 4 года успешно
-                            делаю то
-                            же самое в Объединенных Арабских Эмиратах. Уже 13 лет главным моим инструментом,
-                            позволяющим
-                            быть успешным в продажах, является нетворкинг.
-                        </p>
-                        <p>
-                            Я нарабатывал свой опыт долгое время путем проб и ошибок, а ты можешь всего этого
-                            избежать
-                            благодаря этому курсу!
-                        </p>
-                        <a class="more-info__details" href="./more-details.html"><span>Подробнее</span></a>
-
                     </div>
                 </div>
+
             </div>
         </section>
         <!-- section about -->
         <section class="about">
             <div class="container">
                 <div class="about-info__top">
-                    <div class="row justify-content-between">
-                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="about-info-content">
                                 <div class="about-info__title">
                                     <h2>Что такое нетворкинг?</h2>
@@ -130,7 +142,7 @@
                         </div>
 
 
-                        <div class="col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="about-info__icon">
                                 <!-- <img src="./images/paralax1.png" alt=""> -->
                                 <img src="images/1.svg" alt="">
@@ -140,14 +152,14 @@
 
                 </div>
                 <div class="about-info__middle">
-                    <div class="row justify-content-around">
-                        <div class="col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="about-info__icon">
                                 <!-- <img src="./images/paralax2.png" alt=""> -->
                                 <img src="images/2.svg" alt="">
                             </div>
                         </div>
-                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="about-info-content">
                                 <div class="about-info__title">
                                     <h2>Что такое агентская сеть?</h2>
@@ -164,11 +176,16 @@
         <!-- section media -->
         <section class="media">
             <div class="container">
-                <div class="media-view">
-                    <video autoplay="true" controls="controls" poster="" alt="здесь видео файл">
-                        <source src="./video/starinchuk.video_2.mp4" type="video/mp4" codecs="avc1.42E01E, mp4a.40.2">
-                    </video>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="media-view">
+                            <video autoplay="true" controls="controls" poster="" alt="здесь видео файл">
+                                <source src="./video/starinchuk.video_2.mp4" type="video/mp4"
+                                    codecs="avc1.42E01E, mp4a.40.2">
+                            </video>
 
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -178,7 +195,7 @@
             <div class="container">
                 <div class="about-info__bottom">
                     <div class="row justify-content-between">
-                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="about-info-content">
                                 <div class="about-info__title">
                                     <h2>О чем этот курс?</h2>
@@ -302,10 +319,10 @@
                     </div>
 
                 </div>
-                <div class="sale-discount">
+                <div class="sale-discount" id="sale-discount__items">
                     <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <div class="sale-discount__items" id="sale-discount__items">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="sale-discount__items">
                                 <div class="discount">
                                     <span>50% </span>
                                     <small>cкидка</small>
@@ -357,7 +374,7 @@
                 <div class="footer-main">
                     <div class="footer-main__contact">
                         <span>СВЯЗАТЬСЯ:</span>
-                        <small>Email:
+                        <small><small>Email:</small>
                             <a href="mailto:sergey@starinchuk.com">sergey@starinchuk.com</a></small>
                     </div>
                     <div class="footer-main__social">
@@ -381,8 +398,10 @@
 
 
 
-
+    <script src="./libs/jquery/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/close.js"></script>
 </body>
 
 </html>
