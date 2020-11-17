@@ -113,6 +113,7 @@ menu li {
     width: 100%;
     background: #00122C;
     overflow: hidden;
+    position: relative;
 }
 
 
@@ -390,12 +391,12 @@ header {
 
 .menu__button.active span:before {
     transform: rotate(45deg);
-    
+
 }
 
 .menu__button.active span:after {
     transform: rotate(-45deg);
-   
+
 }
 
 
@@ -1438,6 +1439,7 @@ header {
 footer {
     padding-bottom: 75px;
     padding-top: 130px;
+    z-index: 25;
 }
 
 .footer-main {
@@ -1625,4 +1627,345 @@ footer {
 /* section more-details end */
 
 
+/* media html  */
+.media-home {
+    display: block;
+    position: relative;
+    padding-top: 98px;
+}
 
+.media-main {
+    margin-top: 150px;
+}
+
+.media-main .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.media-main__items h3 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+
+}
+
+.media-main__items span {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    color: #0AD9D9;
+
+}
+
+.media-home .media-main .media-main__items .media__view {
+    padding-top: 25px;
+    width: auto;
+    height: auto;
+    opacity: 1;
+}
+
+.media-home .media-main .media-main__items .media__view video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+    outline: none;
+}
+
+.media-main__items small {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+    color: #0AD9D9;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 120px;
+}
+
+.media-main__items small::after {
+    content: '';
+    background: #0AD9D9;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    position: absolute;
+}
+
+.media__view {
+    display: block;
+    position: relative;
+}
+
+.media__view::before {
+    content: '';
+    position: absolute;
+    width: 35%;
+    height: 35%;
+    background: url("../images/ellipse.svg") no-repeat;
+    background-size: contain;
+    background-position: center;
+    bottom: 50%;
+    right: 50%;
+    opacity: 0.50;
+    transform: translate(50%, 50%);
+}
+
+.media__view:focus .media__view::before {
+    display: none;
+}
+
+.media__view::after {
+    content: '';
+    position: absolute;
+    width: 17.5%;
+    height: 17.5%;
+    background: url("../images/play.svg") no-repeat;
+    background-size: contain;
+    background-position: center;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+
+
+.login-home {
+    width: 100%;
+    background: url('../images/background.jpg');
+    height: 120vh;
+    min-height: 1200px;
+    background-size: cover;
+    position: relative;
+    z-index: 9;
+    transform: translateY(10px);
+
+}
+
+.login-home::after {
+    content: '';
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    background: #001739;
+    mix-blend-mode: color;
+    opacity: 0.7;
+    z-index: 10;
+}
+
+.login-main {
+    position: relative;
+    height: 100%;
+    padding-top: 99px;
+    z-index: 30;
+
+}
+
+.login__items {
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.login form h3 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    padding-top: 23px;
+
+}
+
+.login {
+    background: rgba(0, 0, 0, 0.50);
+    border-radius: 60px;
+    width: 100%;
+    height: 100%;
+    padding: 0 75px;
+
+}
+
+.login form input[type="email"] {
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding-top: 5px;
+    margin-bottom: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #0AD9D9;
+    display: block;
+text-indent: 20px;
+    margin-top: 35px;
+}
+
+.login form input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    font-size: 24px;
+    font-weight: 200;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}
+
+.login form input[type="password"] {
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding-top: 5px;
+    margin-bottom: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #0AD9D9;
+    display: block;
+    text-indent: 20px;
+    margin-top: 35px;
+}
+
+.footer-cabinet {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+}
+
+.checkbox {
+    display: inline-flex;
+    align-items: center;
+}
+
+.rememberme {
+    font-weight: 300;
+    margin-top: 0px;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    background: none;
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+.roundedOne {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin: 20px auto;
+    background: #37ecec;
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.roundedOne label {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#222222), to(#45484d));
+    background: linear-gradient(to bottom, #222222 0%, #45484d 100%);
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px white;
+}
+
+.roundedOne label:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background: #0AD9D9;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0AD9D9), to(#117777));
+    background: linear-gradient(to bottom, #0AD9D9 0%, #117777 100%);
+    opacity: 0;
+    border-radius: 50px;
+    box-shadow: inset 1px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.roundedOne label:hover::after {
+    opacity: 0.3;
+}
+
+.roundedOne input[type=checkbox] {
+    visibility: hidden;
+}
+
+.roundedOne input[type=checkbox]:checked+label:after {
+    opacity: 1;
+}
+
+.check_in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.check_in a {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+    
+}
+
+.check_in a:nth-of-type(2) {
+    font-weight: 700;
+    color: #0AD9D9;
+}
+
+.login form input[type="submit"] {
+    width: 295px;
+    height: 65px;
+    background: #0AD9D9;
+    border-radius: 50px;
+    border: none;
+    font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+color: #FFFFFF;
+transform: translateY(32.5px );
+display: block;
+margin: auto;
+outline: none;
+}
+.forgotpass{
+    margin-top: 30px;
+}
+.forgotpass span{
+    font-weight: 300;
+font-size: 24px;
+line-height: 28px;
+padding-left: 20px;
+color: #FFFFFF;
+}
